@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ToastContainer, toast } from 'react-toastify';
+import   '../Header/Header.css'
 
   import 'react-toastify/dist/ReactToastify.css';
 
@@ -15,7 +16,7 @@ const CardBlog = () => {
 
   const [bookmarkedBlogs, setBookmarkedBlogs] = useState([]);
 
-  const handleMarkAsRead = (id) => {
+  const handleMark = (id) => {
     const updatedBlogs = blogs.map((blog) => {
       if (blog.id === id) {
         return {
@@ -28,7 +29,7 @@ const CardBlog = () => {
     setBlogs(updatedBlogs);
   };
 
-  const handleBookmark = (id) => {
+  const handleBook = (id) => {
     toast("You Have Already Bookmarked This Blog");
     const updatedBlogs = blogs.map((blog) => {
      
@@ -61,22 +62,26 @@ const CardBlog = () => {
       <div className="card-container  text-center w-100 m-auto col-md-6">
         {blogs.map((blog) => (
           <div className="card w-25 m-auto" key={blog.id}>
-            <img src={blog.coverImage} alt={blog.title} />
+        
+            <img src={blog.coverImage} alt={blog.title} /> 
+           
             <div className="card-body">
-              <div className="card-header">
-                <img src={blog.authorImage} alt={blog.author} />
+              <div className="card-header d-flex">
+                <img  className="profile1"src={blog.authorImage} alt={blog.author} />
+                <p >{blog.author}</p>
                 <div>
-                  <p >{blog.author}</p>
-                  <p >{blog.publishDate}</p>
+                <p >{blog.publishDate}</p>
+                 
+                  
                 </div>
               </div>
               <h3 >{blog.title}</h3>
               <p >{blog.readTime}</p>
               <div className="card-footer">
-                <button onClick={() => handleMarkAsRead(blog.id)}>
+                <button onClick={() => handleMark(blog.id)}>
                   Mark as read
                 </button>
-                <button  onClick= {() => handleBookmark(blog.id,blog.bookmarked)}>Mark
+                <button  onClick= {() => handleBook(blog.id,blog.bookmarked)}>Mark
                   
                 </button>
               </div>

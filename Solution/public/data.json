@@ -1,12 +1,12 @@
 [
     {
       "id": 1,
-      "author": "Tanjina",
-      "title": "The Art of Writing Clean Code",
-      "coverImage": "./images/Rectangle 1.png",
-      "authorImage": "https://example.com/images/john_smith.jpg",
-      "readTime": "15 mins",
-      "publishDate": "2022-01-01",
+      "author": "devid",
+      "title": "How to be positive in life",
+      "coverImage": "./images/Positive-think.jpg",
+      "authorImage": "./images/boy1.jpg",
+      "readTime": "5 mins",
+      "publishDate": "2023-2-02",
       "timeSpent": 0,
       "bookmarked": false
     },
