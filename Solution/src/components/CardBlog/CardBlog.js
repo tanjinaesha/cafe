@@ -29,8 +29,9 @@ const CardBlog = () => {
   };
 
   const handleBookmark = (id) => {
+    toast("You Have Already Bookmarked This Blog");
     const updatedBlogs = blogs.map((blog) => {
-      toast("Wow so easy !");
+     
       if (blog.id === id) {
         return {
           ...blog,
@@ -51,7 +52,7 @@ const CardBlog = () => {
       );
       setBookmarkedBlogs(filteredBlogs);
     }
-    const notify = () => 
+    
   };
 
   return (
