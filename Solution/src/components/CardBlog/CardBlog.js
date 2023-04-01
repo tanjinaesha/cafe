@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ToastContainer, toast } from 'react-toastify';
+
+  import 'react-toastify/dist/ReactToastify.css';
 
 const CardBlog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -27,10 +30,12 @@ const CardBlog = () => {
 
   const handleBookmark = (id) => {
     const updatedBlogs = blogs.map((blog) => {
+      toast("Wow so easy !");
       if (blog.id === id) {
         return {
           ...blog,
           bookmarked: !blog.bookmarked,
+          
         };
       }
       return blog;
@@ -46,6 +51,7 @@ const CardBlog = () => {
       );
       setBookmarkedBlogs(filteredBlogs);
     }
+    const notify = () => 
   };
 
   return (
@@ -69,7 +75,7 @@ const CardBlog = () => {
                 <button onClick={() => handleMarkAsRead(blog.id)}>
                   Mark as read
                 </button>
-                <button  onClick={() => handleBookmark(blog.id,blog.bookmarked)}>Mark
+                <button  onClick= {() => handleBookmark(blog.id,blog.bookmarked)}>Mark
                   
                 </button>
               </div>
