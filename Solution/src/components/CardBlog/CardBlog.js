@@ -102,7 +102,7 @@ const CardBlog = () => {
       
 
       <div className="side ">
-        <h3>Bookmarked Blogs ({bookmarkedBlogs.length})</h3>
+        <h3>Bookmarked Blogs Count({bookmarkedBlogs.length})</h3>
         <ul>
           {bookmarkedBlogs.map((blog) => (
             <li key={blog.id}>{blog.title}</li>
