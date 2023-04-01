@@ -1,0 +1,46 @@
+[
+    {
+      "id": 1,
+      "author": "Tanjina",
+      "title": "The Art of Writing Clean Code",
+      "coverImage": "./images/Rectangle 1.png",
+      "authorImage": "https://example.com/images/john_smith.jpg",
+      "readTime": "15 mins",
+      "publishDate": "2022-01-01",
+      "timeSpent": 0,
+      "bookmarked": false
+    },
+    {
+      "id": 2,
+      "author": "Esha",
+      "title": "The Benefits of Meditation",
+      "coverImage": "./images/Group 9.png",
+      "authorImage": "https://example.com/images/jane_doe.jpg",
+      "readTime": "10 mins",
+      "publishDate": "2022-01-15",
+      "timeSpent": 0,
+      "bookmarked": false
+    },
+    {
+      "id": 3,
+      "author": "Sanjana",
+      "title": "The Power of Positive Thinking",
+      "coverImage": "images/Group 10.png",
+      "authorImage": "https://example.com/images/bob_johnson.jpg",
+      "readTime": "12 mins",
+      "publishDate": "2022-02-01",
+      "timeSpent": 0,
+      "bookmarked": false
+    },
+    {
+      "id": 4,
+      "author": "Trisha",
+      "title": "The Importance of Physical Exercise",
+      "coverImage": "https://example.com/images/exercise.jpg",
+      "authorImage": "https://example.com/images/alice_williams.jpg",
+      "readTime": "20 mins",
+      "publishDate": "2022-02-15",
+      "timeSpent": 0,
+      "bookmarked": false
+    }
+  ]
