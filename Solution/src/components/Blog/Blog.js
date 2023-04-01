@@ -12,6 +12,7 @@ When a Component mounts, a data structure called the state is created with a pre
 <p>UseState returns a collection with these two values: the counter or state variable that contains the number  entered. The component will once more be rendered by React </p>
 hi there
 <h1>Purpose of useEffect other than fetching data.</h1>
+<p>useEffect hook will send a network call. When that fetch resolves, the setState function will be used to set the server response to the local state. The component will then display as a result, updating the DOM with the new data.  </p>
 
         </>
     );
