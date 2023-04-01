@@ -14,6 +14,7 @@ hi there
 <h1>Purpose of useEffect other than fetching data.</h1>
 <p>useEffect hook will send a network call. When that fetch resolves, the setState function will be used to set the server response to the local state. The component will then display as a result, updating the DOM with the new data.  </p>
 <h1>How does React works?</h1>
+<p>The user interface is broken up into discrete, reusable code chunks called components by ReactJS</p>
 
         </>
     );
