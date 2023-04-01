@@ -9,8 +9,9 @@ Properties, also known as props, refer to a component's setup. They come from ab
 <p>state
 When a Component mounts, a data structure called the state is created with a preset value</p>
 <h1>how does UseState work?</h1>
-<p>UseState returns a collection with these two values: the counter or state variable that contains the number you entered. The component will once more be rendered by React thanks to the state setter function's (setCounter) ability to change the state variable.</p>
+<p>UseState returns a collection with these two values: the counter or state variable that contains the number  entered. The component will once more be rendered by React </p>
 hi there
+<h1>Purpose of useEffect other than fetching data.</h1>
 
         </>
     );
