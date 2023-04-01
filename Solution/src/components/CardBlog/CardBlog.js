@@ -5,6 +5,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import   '../Header/Header.css'
 
   import 'react-toastify/dist/ReactToastify.css';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faBookBookmark } from '@fortawesome/free-solid-svg-icons'
 
 const CardBlog = () => {
   const [blogs, setBlogs] = useState([]);
@@ -57,33 +59,41 @@ const CardBlog = () => {
   };
 
   return (
-    <div className="d-flex">
+    <div className="d-flex display">
     
-      <div className="card-container  text-center w-100 m-auto col-md-6">
+      <div className="card-container  text-center w-100 col-md-6 p-5">
         {blogs.map((blog) => (
-          <div className="card w-25 m-auto" key={blog.id}>
+          <div className="card w-50 m-5" key={blog.id}>
         
             <img src={blog.coverImage} alt={blog.title} /> 
            
-            <div className="card-body">
-              <div className="card-header d-flex">
+            <div className="card-body ">
+            <div className="d-flex">
+            <div className="card-header d-flex">
                 <img  className="profile1"src={blog.authorImage} alt={blog.author} />
-                <p >{blog.author}</p>
-                <div>
-                <p >{blog.publishDate}</p>
-                 
-                  
-                </div>
+                <p >{blog.author}<p >{blog.publishDate}</p>
+                 </p>
+                
+                
               </div>
+              <p className="time">{blog.readTime}</p>
+              <button  className="mark btn" onClick= {() => handleBook(blog.id,blog.bookmarked)}>
+              <FontAwesomeIcon icon={faBookBookmark} />
+                  
+                </button>
+            </div>
+              
+             
+                
+                  
+                
               <h3 >{blog.title}</h3>
-              <p >{blog.readTime}</p>
-              <div className="card-footer">
-                <button onClick={() => handleMark(blog.id)}>
+            
+              <div >
+                <button className="btn" onClick={() => handleMark(blog.id)}>
                   Mark as read
                 </button>
-                <button  onClick= {() => handleBook(blog.id,blog.bookmarked)}>Mark
-                  
-                </button>
+                
               </div>
             </div>
           </div>
